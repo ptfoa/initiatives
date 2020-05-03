@@ -2,20 +2,27 @@
 <h1>Prince Towers Restriction Revisions</h1>
 <form name="submit-to-google-sheet">
 <h1> Restriction on Newspaper <h1>
-    <input name="newspaper" type="checkbox" label="allow">
-  <input name="newspaper" type="checkbox" label="restrict">
+    <input name="newspaper" type="checkbox" id="newspaper">
+       <input name="newspaper" type="checkbox" id="newspaper">
+    <label for="newspaper">Allow</label>
+    <label for="newspaper">Restrict</label>
+
+<h1> Restriction on Help/Maid <h1>
+    <input name="maid" type="checkbox" id="maid">
+       <input name="maid" type="checkbox" id="maid">
+    <label for="maid">Allow</label>
+    <label for="maid">Restrict</label>
+<h1> Restriction on Driver <h1>
+    <input name="driver" type="checkbox" id="driver">
+       <input name="driver" type="checkbox" id="driver">
+    <label for="driver">Allow</label>
+    <label for="driver">Restrict</label>
     
-    <h1> Restriction on Help (Maid and Driver) </h1>
-      <input name="maid" type="checkbox" label="allow">
-  <input name="maid" type="checkbox" label="restrict">
-    
-    <h1> Restriction on driver (may 19th) </h1>
-        <input name="driver" type="checkbox" label="allow">
-  <input name="driver" type="checkbox" label="restrict">
-    
-    <h1> Follow Goverment directive (May 19th) </h1>
-        <input name="government directive" type="checkbox" label="allow" required>
-  <input name="government directive" type="checkbox" label="restrict">
+<h1> Follow Goverment directive till Map 19th <h1>
+    <input name="goverment directive" type="checkbox" id="goverment directive">
+       <input name="goverment directive" type="checkbox" id="goverment directive">
+    <label for="goverment directive">Agree</label>
+    <label for="goverment directive">Partial Agree</label>
   
     <button type="submit">Send</button>
 </form
