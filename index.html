@@ -2,10 +2,22 @@
 <h1>Prince Towers Restriction Revisions</h1>
 <form name="submit-to-google-sheet">
 <h1> Restriction on Newspaper <h1>
-    <input name="maid" type="checkbox" placeholder="allow" required>
-  <input name="maid" type="checkbox" placeholder="restrict">
-  <input name="government directive" type="checkbox" placeholder="allow">
-  <button type="submit">Send</button>
+    <input name="newspaper" type="checkbox" label="allow">
+  <input name="newspaper" type="checkbox" label="restrict">
+    
+    <h1> Restriction on Help (Maid and Driver) </h1>
+      <input name="maid" type="checkbox" label="allow">
+  <input name="maid" type="checkbox" label="restrict">
+    
+    <h1> Restriction on driver (may 19th) </h1>
+        <input name="driver" type="checkbox" label="allow">
+  <input name="driver" type="checkbox" label="restrict">
+    
+    <h1> Follow Goverment directive (May 19th) </h1>
+        <input name="government directive" type="checkbox" label="allow" required>
+  <input name="government directive" type="checkbox" label="restrict">
+  
+    <button type="submit">Send</button>
 </form
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyGcocG00m_HMhikAkYf9Db5hQ7wLlHUudT7w73f9vgUdCQoPk/exec'
