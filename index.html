@@ -29,13 +29,14 @@
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyGcocG00m_HMhikAkYf9Db5hQ7wLlHUudT7w73f9vgUdCQoPk/exec'
   const form = document.forms['submit-to-google-sheet']
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+         <script src='google-sheet.js'></script>
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
-      <script src='google-sheet.js'></script>
+ 
   })
 </script>
 
