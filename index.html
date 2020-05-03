@@ -1,5 +1,6 @@
 <body>
-<form id="test-form">
+<form id="submit-to-google-sheet">
+
 <h1>Prince Towers Restriction Revisions</h1>
 <div>
     <input type="checkbox" id="Option 1" name="timestamp"></div>
@@ -25,6 +26,17 @@
     <label for="vehicle3"> Hold on till May 19th </label><br><br></div>
   <div> <button type="submit" id="submit-form">Submit</button></div>
 </form>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyGcocG00m_HMhikAkYf9Db5hQ7wLlHUudT7w73f9vgUdCQoPk/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 
 </body>
 </html>
