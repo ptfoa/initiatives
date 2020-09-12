@@ -1,0 +1,39 @@
+<html><body>
+    <marquee><h1>Initiatives</marquee></h1>
+<form name="submit-to-google-sheet">
+    
+    <h1> Disclaimer! Prerequisite: $$ FUNDS to be sanctioned seperately! </h1>
+
+<h1> TT Board </h1>
+<img src="joola.jpg" alt="TTBoard">
+    <input name="TT Board" type="radio" id="newspaper">
+       <input name="TT Board" type="radio" id="newspaper">
+	       <label for="TT Board">Let's do this</label>
+    <label for="TT Board">Bail!</label>
+
+<h1> myGate</h1>
+<img src="mygate.jpg" alt="myGate">
+    <input name="Centralized Approval and Communication" type="radio" id="Centralized Approval and Communication">
+       <input name="Centralized Approval and Communication" type="radio" id="Centralized Approval and Communication">
+    <label for="Centralized Approval and Communication">Let's do this</label>
+    <label for="Centralized Approval and Communication">bail!</label>
+    
+    
+<h1> Scoreboard </h1>
+<img src="fitbit.jpg" alt="scoreboard">    
+    <input name="Website for Announcements" type="radio" id="scoreboard">
+    <label for="Website for Announcements/ Maintainenace Fund collection">Let's do this</label>
+    <label for="Website for Announcements">bail!</label>
+    
+
+<script>
+if (validateForm === true) {
+        $.ajax({
+            type: 'post',
+            url: 'https://script.google.com/macros/s/AKfycbyGcocG00m_HMhikAkYf9Db5hQ7wLlHUudT7w73f9vgUdCQoPk/exec',
+            data: $("#workPLZ").serialize(),
+            success: alert($("#workPLZ").serialize())
+        });
+    }
+    else {}
+ </script>
